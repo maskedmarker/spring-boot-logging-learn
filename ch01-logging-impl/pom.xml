@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.example.learn.spring.boot.logging</groupId>
+        <artifactId>spring-boot-logging-learn</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>ch01-logging-impl</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>ch011-log4j-impl</module>
+        <module>ch012-logback-impl</module>
+        <module>ch014-slf4j-impl</module>
+        <module>ch013-jul-impl</module>
+        <module>ch015-commons-logging-impl</module>
+        <module>ch016-log4j2-impl</module>
+    </modules>
+
+</project>

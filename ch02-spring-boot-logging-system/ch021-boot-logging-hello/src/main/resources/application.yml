@@ -1,0 +1,17 @@
+# web server
+server:
+  port: 9082
+
+# spring auto configure
+spring:
+  application:
+    name: user-service
+
+
+# logging
+logging:
+  level:
+    root: INFO
+    org:
+      springframework: DEBUG
+

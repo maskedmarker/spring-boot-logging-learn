@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class LoggingHelloApplication {
+public class HelloLoggingApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(LoggingHelloApplication.class, args);
+        SpringApplication.run(HelloLoggingApplication.class, args);
     }
 
 }

@@ -5,7 +5,7 @@ server:
 # spring auto configure
 spring:
   application:
-    name: hello-logging
+    name: hello-log4j2
 
 
 # logging

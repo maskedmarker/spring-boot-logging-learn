@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>ch021-boot-logging-hello</module>
+        <module>ch022-boot-log4j2-hello</module>
     </modules>
 
     <properties>

@@ -13,7 +13,7 @@
         <file>logs/spring-boot-app.log</file>
         <append>true</append>
         <encoder>
-            <pattern>[%d{yyyy-MM-dd HH:mm:ss}] [%-5level] [%thread] [%logger] - %msg%n</pattern>
+            <pattern>[%d{yyyy-MM-dd HH:mm:ss}] [%-5level] [%thread] [%class] - %msg%n</pattern>
         </encoder>
     </appender>
 

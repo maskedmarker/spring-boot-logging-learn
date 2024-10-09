@@ -4,7 +4,7 @@
     <!-- 控制台输出 -->
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
-            <pattern>[%d{yyyy-MM-dd HH:mm:ss}] [%-5level] [%thread] [%class %M:%L] - %msg%n</pattern>
+            <pattern>[%d{yyyy-MM-dd HH:mm:ss}] [%-5level] [%thread] [%class | %M:%L] - %msg%n</pattern>
         </encoder>
     </appender>
 
@@ -13,8 +13,13 @@
         <file>logs/spring-boot-app.log</file>
         <append>true</append>
         <encoder>
-            <pattern>[%d{yyyy-MM-dd HH:mm:ss}] [%-5level] [%thread] [%class %M:%L] - %msg%n</pattern>
+            <pattern>[%d{yyyy-MM-dd HH:mm:ss}] [%-5level] [%thread] [%class | %M:%L] - %msg%n</pattern>
         </encoder>
+    </appender>
+
+    <!-- 异步日志 -->
+    <appender name="ASYNC" class="ch.qos.logback.classic.AsyncAppender">
+        <appender-ref ref="FILE" />
     </appender>
 
     <!-- 项目中特定包的日志级别 -->
@@ -23,17 +28,12 @@
     </logger>
 
     <!-- 第三方库的日志级别 -->
-    <logger name="org.springframework" level="INFO" />
-
-    <!-- 异步日志 -->
-    <appender name="ASYNC" class="ch.qos.logback.classic.AsyncAppender">
-        <appender-ref ref="FILE" />
-    </appender>
+    <!--<logger name="org.springframework" level="INFO" />-->
 
     <!-- 定义日志的根级别 -->
-    <root level="WARN">
+    <root>
         <appender-ref ref="CONSOLE" />
-<!--        <appender-ref ref="FILE" />-->
+        <appender-ref ref="FILE" />
     </root>
 
 </configuration>

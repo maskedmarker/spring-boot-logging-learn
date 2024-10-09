@@ -23,9 +23,9 @@
     </appender>
 
     <!-- 项目中特定包的日志级别 -->
-    <logger name="org.example" level="DEBUG">
+<!--    <logger name="org.example" level="DEBUG">
         <appender-ref ref="FILE" />
-    </logger>
+    </logger>-->
 
     <!-- 第三方库的日志级别 -->
     <!--<logger name="org.springframework" level="INFO" />-->

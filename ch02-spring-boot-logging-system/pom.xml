@@ -14,6 +14,8 @@
     <modules>
         <module>ch021-boot-logging-hello</module>
         <module>ch022-boot-log4j2-hello</module>
+        <module>ch023-boot-config-priority</module>
+        <module>ch024-boot-config-priority-log4j2</module>
     </modules>
 
     <properties>

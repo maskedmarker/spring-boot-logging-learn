@@ -1,0 +1,18 @@
+# web server
+server:
+  port: 9082
+
+# spring auto configure
+spring:
+  application:
+    name: hello-logging
+
+
+# logging
+logging:
+  level:
+    root: INFO
+    org:
+      springframework: DEBUG
+      example: DEBUG
+

@@ -21,3 +21,7 @@ Spring Boot uses a very particular PropertySource order that is designed to allo
 
 ## 注意
 
+### logger-name
+To omit the package name from the logger name in Log4j2, you can customize the logging pattern in your log4j2.xml configuration file. 
+You can use the %c{n} conversion pattern, where n specifies how many levels of the logger name to display.
+If your logger is named com.example.MyClass, using %c{1} would result in just MyClass in the log output.

@@ -29,3 +29,6 @@ If your logger is named com.example.MyClass, using %c{1} would result in just My
 ### case-insensitive
 log4j2.xml文件中的tag名以及属性大小写不敏感.
 log4j2-template.xml是从官网拷贝的写法,尽量与官网保持一致.
+
+### PatternLayout
+参考: https://logging.apache.org/log4j/2.x/manual/pattern-layout.html

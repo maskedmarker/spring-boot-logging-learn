@@ -152,6 +152,16 @@ logger{precision}
 logger的name,非caller的qualified class name
 ```
 
+%C和%c是不同的,注意区别
+```text
+logger = LoggerFactory.getLogger(ExampleLoggingRunner.class)
+logger = LoggerFactory.getLogger("example")
+通常我们使用前者的形式定义logger,有时也通过后者的形式定义logger.
+当使用前者形式时,%C和%c碰巧等价.注意是碰巧!!!!
+建议使用%C,谁会关心logger的名字,更多是关心caller及其方法和行号
+
+```
+
 #### Message
 Outputs the message associated with the log event
 ```text

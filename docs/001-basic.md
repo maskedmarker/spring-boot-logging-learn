@@ -21,3 +21,13 @@ If your logger is named com.example.MyClass, using %c{1} would result in just My
 参考: https://logging.apache.org/log4j/2.x/manual/pattern-layout.html
 
 
+##待处理
+additivity(可累加性)
+
+```text
+The word "additivity" refers to the property of being additive, which means that something can be added or combined while maintaining a certain characteristic. 
+In the context of logging (e.g., in Log4j2), additivity determines whether log messages from a specific logger are also passed to its parent logger.
+```
+
+
+

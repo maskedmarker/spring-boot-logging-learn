@@ -142,6 +142,13 @@ class{precision}
 caller的qualified class name
 ```
 
+#### File
+Outputs the file name where the logging request was issued
+```text
+F
+file
+```
+
 #### Logger
 Outputs the name of the logger that published the log event
 ```text

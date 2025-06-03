@@ -169,6 +169,36 @@ logger = LoggerFactory.getLogger("example")
 
 ```
 
+#####  precision specifier
+
+```text
+By default, the layout prints the logger name in full.
+A logger conversion specifier can be optionally followed by a precision specifier, which consists of a decimal integer, or a pattern starting with a decimal integer.
+
+When the precision specifier is an integer value, it reduces the size of the logger name. 
+If the number is positive, the layout prints the corresponding number of the rightmost logger name components. 
+If negative, the layout removes the corresponding number of leftmost logger name components.
+
+If the precision contains periods(小数点) then 
+    the number before the first period identifies the length to be printed from items that precede tokens in the rest of the pattern. 
+If the number after the first period is followed by an asterisk 
+    it indicates how many of the rightmost tokens will be printed in full.
+
+If the precision contains any non-integer characters, then the layout abbreviates the name based on the pattern. 
+If the precision integer is less than one, the layout still prints the right-most token in full.
+
+精度说明符的解释:
+整数值情况
+    正数：当精度说明符是一个正整数时，布局会打印日志名称中相应数量的最右边的组件。
+    负数：当精度说明符是一个负整数时，布局会移除日志名称中相应数量的最左边的组件。
+包含小数点的情况
+    小数点前的数字：如果精度包含小数点，那么小数点前的数字表示从模式中其余部分之前的项目中打印的长度。
+    小数点后带星号的数字：如果小数点后的数字后面跟着一个星号，那么它表示将完整打印最右边的多少个标记。
+非整数字符情况
+    非整数字符：如果精度包含任何非整数字符，那么布局将根据模式缩写名称。
+    小于1的整数：如果精度整数小于1，布局仍然会完整打印最右边的标记。
+```
+
 #### Message
 Outputs the message associated with the log event
 ```text
